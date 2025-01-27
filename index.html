@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina di Test con Font Personalizzato</title>
     <style>
+        /* Prova a caricare il font dalla cartella .fonts dell'utente */
         @font-face {
             font-family: 'PIX7SEGS';
-            src: url('PIX7SEGS.TTF') format('truetype');
+            src: url('~/.fonts/PIX7SEGS.TTF') format('truetype');
         }
 
         body {
@@ -28,6 +29,6 @@
 </head>
 <body>
     <h1>Benvenuto nella pagina di test</h1>
-    <p>Questa è una pagina HTML che utilizza il font caricato nel sistema.</p>
+    <p>Questa è una pagina HTML che usa il font personalizzato se presente, altrimenti usa il font di sistema.</p>
 </body>
 </html>
