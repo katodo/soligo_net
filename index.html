@@ -1,1 +1,33 @@
-CIAO
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Test con Font Personalizzato</title>
+    <style>
+        @font-face {
+            font-family: 'PIX7SEGS';
+            src: url('PIX7SEGS.TTF') format('truetype');
+        }
+
+        body {
+            font-family: 'PIX7SEGS', sans-serif;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Benvenuto nella pagina di test</h1>
+    <p>Questa è una pagina HTML che utilizza il font caricato nel sistema.</p>
+</body>
+</html>
